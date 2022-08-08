@@ -38,6 +38,7 @@ RUN apt-get update -qq \
     less \
     netcat \
     openssl \
+    git \
     gnutls-bin \
     passwd \
     pwgen \
