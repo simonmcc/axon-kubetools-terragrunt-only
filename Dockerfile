@@ -44,7 +44,7 @@ RUN apt-get update -qq \
     ssh \
     unzip \
     wget \
-    zsh \
+    bash \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
@@ -79,4 +79,4 @@ RUN wget -nv https://github.com/gruntwork-io/terragrunt/releases/download/${terr
 RUN wget -nv https://github.com/mikefarah/yq/releases/download/${yq_version}/yq_linux_amd64 -O /usr/local/bin/yq \
     && chmod +x /usr/local/bin/yq
 
-ENTRYPOINT ["/bin/zsh"]
+ENTRYPOINT ["/bin/bash"]
